@@ -1,0 +1,99 @@
+html, body {
+	overflow-x:hidden;
+}
+body {
+	font-family: "Didot", Times, Garamond, Serif;
+	color:#333333;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Oswald", Helvetica, Arial, sans-serif;
+}
+h1,h2 {
+	font-size: 55px;
+	font-weight: lighter;
+	margin-bottom: 5px;
+}
+h6 {
+	font-size: 12px;
+	font-weight: lighter;
+	margin-bottom: 5px;
+}
+p {
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 100;
+}
+
+/* GRID */
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+.container: before,
+.container: after {
+	content: " ";
+	display: table;
+}
+.container: after {
+	clear: both;
+}
+.one-half, .one-third {
+	width: 96%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	margin: 0 2% 20px;
+}
+
+/* Header */
+header {
+	color: #372F1D;
+	background: #FFFFFF;
+	background-image: ;
+
+}
+header img {
+	display: block;
+	margin: 3em auto 0;
+}
+header nav ul {
+	display: inline;
+	text-align: right;
+	float: right;
+	margin: 0;
+}
+header nav ul > li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 15px;
+}
+header nav ul > h1 {
+	opacity: 0.84;
+	font-family: Oswald-Light;
+	font-size: 80px;
+	color: #372F1D;
+	line-height: 120px;
+}
+
+@media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
